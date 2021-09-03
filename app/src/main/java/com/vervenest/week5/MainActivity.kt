@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val fdv = FragmentProfileView()
         val b = Bundle()
         println("@@@@@@@@@@@@@@@@@@@@@@@@display:"+user.uid)
-        b.putString("user", user.uid.toString())
+        b.putString("uid", user.uid.toString())
         fdv.arguments = b
         supportFragmentManager.beginTransaction().replace(R.id.frame1, fdv)
             .commit()
