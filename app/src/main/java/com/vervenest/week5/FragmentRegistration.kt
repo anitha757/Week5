@@ -79,9 +79,9 @@ class FragmentRegistration : Fragment() {
                     userName!!.text.toString(),
                     email!!.text.toString(),
                     radioButton!!.text.toString(),
-                    age!!.text.toString(),
                     datePicker!!.text.toString(),
-                    timePicker!!.text.toString()
+                    timePicker!!.text.toString(),
+                    age!!.text.toString()
                 )
                 val ma = activity as MainActivity?
                 if (ma != null) {

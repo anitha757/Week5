@@ -31,8 +31,8 @@ class FragmentListView : Fragment() {
         list = ma1!!.getUsersList()
         if (list==null || list!!.isEmpty()) {
             list = ArrayList()
-            (list as ArrayList<User>)!!.add(User(998,"Ramkumar", "ram@gmail", "Male", "30", "12-08-2021", "12:23"))
-            (list as ArrayList<User>)!!.add(User(999,"Shanu", "shanu@gmail", "Female", "2", "12-08-2021", "12:23"))
+            (list as ArrayList<User>)!!.add(User(998,"Ramkumar", "ram@gmail", "Male", "12-08-2021", "12:23","30"))
+            (list as ArrayList<User>)!!.add(User(999,"Shanu", "shanu@gmail", "Female","12-08-2021", "12:23","2"))
             ma1.saveUsersList(list)
         }
         usersAdapter = UsersAdapter(activity, list)
